@@ -1,0 +1,2 @@
+#!/bin/bash
+vncviewer $(docker port $1 5900)

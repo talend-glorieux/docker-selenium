@@ -1,0 +1,3 @@
+#!/bin/bash
+NODES=$1
+docker-compose up -d --scale chrome=${NODES:-5} --scale firefox=${NODES:-5} --scale chrome-debug=0 --scale firefox-debug=0
